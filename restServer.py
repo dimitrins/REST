@@ -5,8 +5,6 @@ from sqlalchemy.orm import sessionmaker
 from flask.ext.jsonpify import jsonify
 from rest_declarative import ResultSensor1, ResultSensor2, Base
 
-import requests
-
 engine = create_engine('sqlite:///restDatabase.db')
 Base.metadata.bind = engine
 
